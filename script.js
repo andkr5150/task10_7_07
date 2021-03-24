@@ -114,7 +114,6 @@ document.getElementById('btn_calc').addEventListener('click', function () {
         const secondNumber = inputWindow.value.split("+");
         const rezult = lastOperand + parseInt(secondNumber[1]);
         countOperation.push(lastOperand + ' + ' + secondNumber[1] + ' = ' + rezult);
-        console.log(countOperation);
         operation = null;
         lastOperand = 0;
         inputWindow.value = rezult;
@@ -124,7 +123,6 @@ document.getElementById('btn_calc').addEventListener('click', function () {
         const secondNumber = inputWindow.value.split("-");
         const rezult = lastOperand - parseInt(secondNumber[1]);
         countOperation.push(lastOperand + ' - ' + secondNumber[1] + ' = ' + rezult);
-        console.log(countOperation);
         operation = null;
         lastOperand = 0;
         inputWindow.value = rezult;
@@ -134,7 +132,6 @@ document.getElementById('btn_calc').addEventListener('click', function () {
         const secondNumber = inputWindow.value.split("*");
         const rezult = lastOperand * parseInt(secondNumber[1]);
         countOperation.push(lastOperand + ' * ' + secondNumber[1] + ' = ' + rezult);
-        console.log(countOperation);
         operation = null;
         lastOperand = 0;
         inputWindow.value = rezult;
@@ -146,7 +143,6 @@ document.getElementById('btn_calc').addEventListener('click', function () {
             const secondNumber = inputWindow.value.split("/");
             const rezult = lastOperand / parseInt(secondNumber[1]);
             countOperation.push(lastOperand + ' / ' + secondNumber[1] + ' = ' + rezult);
-            console.log(countOperation);
             operation = null;
             lastOperand = 0;
             inputWindow.value = rezult;
@@ -166,9 +162,6 @@ document.getElementById('btn_sq').addEventListener('click', function () {
     operation = null;
     lastOperand = 0;
     inputWindow.value = rezult;
-
-    console.log(lastOperand);
-    console.log(rezult);
     addHistory();
 })
 
